@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanda Konveksi | Pesanan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body class="fade-in">
+    <nav>
+        <a href="index.html">
+            <img src="logo.png" style="width: 150px; height: auto;" alt="Tanda Logo" class="nav-logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pesanan.html" class="active">Pesanan</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section class="order-container reveal-card">
+        <h2>Pesanan WhatsApp</h2>
+        <form id="pesanForm">
+            <div class="form-group">
+                <select id="model" required>
+                    <option value="" disabled selected>Model Pakaian</option>
+                    <option value="Seragam Sekolah">Seragam Sekolah</option>
+                    <option value="Almameter">Almameter</option>
+                    <option value="Kaos">Kaos</option>
+                    <option value="Gamis">Gamis</option>
+                    <option value="Permak">Permak</option>
+                    <option value="Kemeja">Kemeja</option>
+                    <option value="Baju Anak">Baju Anak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" id="nama" placeholder="Nama Anda" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="alamat" placeholder="Alamat Lengkap" required>
+            </div>
+            <div class="form-group">
+                <textarea id="catatan" rows="4" placeholder="Catatan (Ukuran, Warna, dll)"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Kirim Pesanan</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="pesanan.js"></script>
+</body>
+</html>
